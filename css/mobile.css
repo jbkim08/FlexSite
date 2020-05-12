@@ -1,0 +1,63 @@
+/* 무엇을 하는가 섹션 */
+#what .items {
+    display: block;
+    padding: 1rem;
+}
+/* 아이콘과 글의 위치가 flex */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+/* 아이콘 센터 맞추기 */
+#what .items .item i {
+    align-self: center;
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+
+/* 메뉴바 */
+@media(max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #navbar ul {
+        padding: 0.5rem;
+    }
+}
+/* 우리는 누구 섹션 */
+#who {
+    display: block;
+}
+#who .who-img {
+    display: none;
+}
+/* 컨텍트 섹션 */
+#contact {
+    flex-direction: column;
+}
+#contact .map {
+    height: 300px;
+    border-top: 4px solid #333;
+}
+/* 제목 사이즈 수정 */
+.l-heading {
+    font-size: 3rem;
+}
+.lead {
+    font-size: 1rem;
+}
+
+#showcase {
+    margin-top: -2rem;
+}
+
+@media(max-height: 568px) {
+    #showcase {
+        margin-top: -3rem;
+    }
+}

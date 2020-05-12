@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 사이트</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     <!-- 폰트오썸 CDN 링크 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+     <!-- 메인 CSS -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+
+</head>
+<body id="home">
+    <!-- 메뉴 바 -->
+    <nav id="navbar">
+        <h1 class="logo"> <!-- 로고 -->
+            <span class="text-primary">
+                <i class="fas fa-cat"></i>Flex
+            </span>보수동 책방골목
+        </h1>
+        <ul> <!-- 리스트 -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- 메뉴 바 끝-->
+    <!-- 쇼케이스 시작 -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                인생은 짧다.
+            </h1>
+            <p class="lead">
+                원래 좋고 나쁜 것은 다 생각하기 나름이다. - 윌리엄 셰익스피어
+            </p>
+            <a href="#what" class="btn">더 보기</a>
+        </div>
+    </header>
+    <!-- 쇼케이스 끝 -->
+    <!-- 섹션: 무엇을 하나  -->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">무엇을</span> 하는가?
+            </h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-book-reader"></i>
+                    <div>
+                        <h3>책 읽기</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, adipisci!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-paw"></i>
+                    <div>
+                        <h3>고양이 관리</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, adipisci!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-store-alt"></i>
+                    <div>
+                        <h3>책방 관리</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, adipisci!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 섹션: 무엇을 하나 끝 -->
+    <!-- 섹션: 우리는 누구? -->
+    <section id="who">
+        <div class="who-img p-2"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading">
+                <span class="text-primary">우리는</span> 누구인가?
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo quibusdam ducimus nesciunt, dolorem est.</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>CEO: 홍길동</li>
+                <li>CTO: 홍길동</li>
+                <li>홍보: 홍길동</li>
+                <li>판매: 홍길동</li>
+                <li>매니저: 홍길동</li>
+            </ul>
+        </div>
+    </section>
+    <!-- 섹션: 우리는 누구? 끝 -->
+    <!-- 섹션: 클라이언트 -->
+    <section id="clients" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">우리의</span> 고객들
+            </h2>
+            <div class="items py-1">
+                <div><img src="img/client1.png" alt="고객들"></div>
+                <div><img src="img/client2.png" alt="고객들"></div>
+                <div><img src="img/client3.png" alt="고객들"></div>
+                <div><img src="img/client4.png" alt="고객들"></div>
+                <div><img src="img/client5.png" alt="고객들"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 섹션: 클라이언트 끝 -->
+    <!-- 섹션: 컨택트 -->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">연락처</h2>
+            <p>아래에 있는 연락처를 사용하세요</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="이름 입력">
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" placeholder="이메일 입력">
+                </div>
+                <div class="form-group">
+                    <label for="phone">핸드폰</label>
+                    <input type="phone" id="phone" placeholder="전화번호 입력">
+                </div>
+                <div class="form-group">
+                    <label for="message">메세지</label>
+                    <textarea id="message" placeholder="메세지 입력"></textarea>
+                </div>
+                <input type="submit" value="보내기" class="btn btn-dark">
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.0252717885105!2d129.05739041405167!3d35.155990480320035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6feb39fa0d%3A0x17502eaffb28a5b4!2z67aA7IKwSVTqtZDsnKHshLzthLA!5e0!3m2!1sko!2skr!4v1589246426138!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+    <!-- 섹션: 컨택트 끝-->
+    <!-- Footer -->
+    <footer class="main-footer bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2020, 책방골목, All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- 제이쿼리 CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* *{
+    display: none;
+} */
+
+/* 무엇을 하는가 섹션 */
+/* 아이콘과 글의 위치가 flex */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+/* 아이콘 센터 맞추기 */
+#what .items .item i {
+    align-self: center;
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+/* 컨택트 섹션의 지도 크기를 넓게 */
+#contact .map {
+    flex: 20;
+}
